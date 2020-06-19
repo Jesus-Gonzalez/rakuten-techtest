@@ -1,10 +1,13 @@
 import React from 'react'
 
 import { Routing, Store } from '~/core'
+import { Layout } from '~/app/components'
 
 const App = () => (
   <Store>
-    <Routing />
+    <Layout>
+      <Routing />
+    </Layout>
   </Store>
 )
 
