@@ -25,7 +25,9 @@
   "homepage": "https://github.com/Jesus-Gonzalez/rakuten-techtest#readme",
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -43,6 +45,7 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-standard": "^4.0.1",
     "html-webpack-plugin": "^4.3.0",
+    "prop-types": "^15.7.2",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",

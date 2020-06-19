@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const rootPath = fs.realpathSync(process.cwd())
 const resolvePath = relativePath => path.join(rootPath, relativePath)
@@ -34,6 +34,9 @@ module.exports = {
     ],
   },
   resolve: {
+    alias: {
+      '~': resolvePath('src')
+    },
     extensions: ['.js', '.jsx']
   },
   plugins: [
@@ -42,6 +45,6 @@ module.exports = {
       template: resolvePath('static/index.html'),
     }),
   ],
-};
+}
 
-process.env.NODE_ENV = 'development';
+process.env.NODE_ENV = 'development'
