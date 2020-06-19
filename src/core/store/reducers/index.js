@@ -2,10 +2,10 @@ import { combineReducers } from 'redux'
 
 import application from './application'
 import detail from './detail'
-import lists from './lists'
+import films from './films'
 
 export default combineReducers({
   application,
   detail,
-  lists,
+  films,
 })
