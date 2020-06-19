@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 
 import { fetchFilms, setDetail } from '~/core/store/actions'
 
+import { withLayout } from '~/app/components'
+
 import { useHomePage } from './useHomePage.hook'
 
 import HomePageComponent from './HomePage.component'
@@ -26,4 +28,6 @@ const mapDispatchToProps = dispatch => ({
   setDetail: compose(dispatch, setDetail),
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage)
+const ConnectedHomePage = connect(mapStateToProps, mapDispatchToProps)(HomePage)
+
+export default withLayout(ConnectedHomePage)

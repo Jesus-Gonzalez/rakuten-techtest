@@ -15,14 +15,15 @@ const Routing = () => (
   <Router>
     <React.Suspense fallback={<LoadingPage />}>
       <Switch>
-        <Route
+        {/* <Route
           exact
           path='/'
           render={() => <Redirect to='/home' />}
-        />
+        /> */}
 
         <Route
-          path='/home'
+          exact
+          path='/'
           component={HomePage}
         />
 
