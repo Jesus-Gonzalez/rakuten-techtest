@@ -1,0 +1,26 @@
+{
+  "name": "@jesus.gonzalez.eu/rakuten-techtest",
+  "version": "1.0.0",
+  "description": "rakuten technical test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesus-Gonzalez/rakuten-techtest.git"
+  },
+  "keywords": [
+    "rakuten",
+    "techtest",
+    "technical-test",
+    "react",
+    "redux"
+  ],
+  "author": "Jesus Gonzalez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jesus-Gonzalez/rakuten-techtest/issues"
+  },
+  "homepage": "https://github.com/Jesus-Gonzalez/rakuten-techtest#readme"
+}
