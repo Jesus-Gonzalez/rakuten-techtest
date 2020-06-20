@@ -1,10 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import { Carousel } from '~/app/components'
 
 const HomePageComponent = () => (
   <div>
     <h1>Home Page</h1>
-    <Link to='/detail'>Detail</Link>
+    <h2>List</h2>
+    <Carousel />
   </div>
 )
 
