@@ -1,38 +1,81 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { CarouselItem } from './components'
+import {
+  Arrow,
+  CarouselItem,
+} from './components'
 
 import styles from './Carousel.styles'
 
 const propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object)
+  pagination: PropTypes.shape({
+    arrow: PropTypes.shape({
+      left: PropTypes.bool.isRequired,
+      right: PropTypes.bool.isRequired,
+    }).isRequired,
+  }).isRequired,
+  items: PropTypes.arrayOf(PropTypes.object),
 }
 
-const CarouselComponent = ({ items }) => (
-  <div className={styles.wrapper}>
-    <div className={styles.scroll}>
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
+const CarouselComponent = props => {
+  const {
+    pagination: {
+      arrow,
+      ref,
+      go
+    },
+    items
+  } = props
+
+  return (
+    <div className={styles.pagination}>
+      <div
+        ref={ref.wrapper}
+        className={styles.wrapper}
+      >
+        {arrow.left && (
+          <div className={styles.left}>
+            <Arrow
+              left
+              go={go}
+            />
+          </div>
+        )}
+        <div
+          className={styles.scroll}
+        >
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+          <CarouselItem />
+        </div>
+        {arrow.right && (
+          <div className={styles.right}>
+            <Arrow
+              right
+              go={go}
+            />
+          </div>
+        )}
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 CarouselComponent.propTypes = propTypes
 

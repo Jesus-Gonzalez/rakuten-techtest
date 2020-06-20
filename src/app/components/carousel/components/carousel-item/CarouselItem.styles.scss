@@ -1,9 +1,8 @@
-.wrapper {
-  background: red;
-  overflow: auto;
+.item {
+  margin: 0 3px;
 }
 
-.scroll {
-  display: flex;
-  flex-wrap: nowrap;
+.item, .artwork {
+  width: 217px;
+  height: 303px;
 }

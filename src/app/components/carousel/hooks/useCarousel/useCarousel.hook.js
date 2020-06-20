@@ -1,3 +1,12 @@
-import React from 'react'
+import {
+  useCarouselScroll,
+  useCarouselUser,
+} from './__hooks'
 
-export default () => ({})
+export default configuration => {
+  const scrollHook = useCarouselScroll(configuration)
+  // const userHook = useCarouselUser(configuration)
+
+  return Object.assign({}, scrollHook)
+  // return Object.assign({}, scrollHook, userHook)
+}
