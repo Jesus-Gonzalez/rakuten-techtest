@@ -1,4 +1,6 @@
-export const SetFilm = 'SET_FILM'
-export const FetchFilms = 'FETCH_FILMS'
-export const FetchFilmsSuccess = 'FETCH_FILMS_SUCCESS'
-export const FetchFilmsError = 'FETCH_FILMS_ERROR'
+export const Films = {
+  Set: 'Films::SetFilm',
+  Fetch: 'Films::Fetch',
+  FetchSuccess: 'Films::Fetch.Success',
+  FetchError: 'Films::Fetch.Error',
+}

@@ -10,6 +10,7 @@ module.exports = {
   output: {
     filename: '[name].[hash].bundle.js',
   },
+  devtool: 'eval-source-map',
   devServer: {
     contentBase: resolvePath('static'),
     compress: true,
