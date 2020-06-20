@@ -14,9 +14,10 @@ export default configuration => {
 
   React.useEffect(() => {
     wrapperRef.current.scrollLeft = page * window.outerWidth
-    setLeft(wrapperRef.current.scrollLeft > 0)
-    const isMaxPage = window.outerWidth + wrapperRef.current.scrollLeft >= wrapperRef.current.scrollWidth
-    setRight(!isMaxPage)
+    // console.log('wrapperRef.current.scrollLeft', wrapperRef.current.scrollLeft)
+    setLeft(page !== 0)
+    const maxPage = wrapperRef.current.scrollWidth / window.outerWidth
+    setRight(page !== Math.floor(maxPage))
   }, [page])
 
   return {
