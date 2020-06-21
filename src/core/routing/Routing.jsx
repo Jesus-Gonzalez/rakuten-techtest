@@ -28,7 +28,7 @@ const Routing = () => (
         />
 
         <Route
-          path='/detail'
+          path='/detail/:filmId'
           component={DetailPage}
         />
       </Switch>

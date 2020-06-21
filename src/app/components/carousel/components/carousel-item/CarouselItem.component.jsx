@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import styles from './CarouselItem.styles'
+import { Link } from 'react-router-dom'
 
 const propTypes = {
   item: PropTypes.object,
@@ -14,10 +15,12 @@ const CarouselItem = props => {
 
   return (
     <div className={styles.item}>
-      <img
-        className={styles.artwork}
-        src={images.artwork}
-      />
+      <Link to={`/detail/${item.id}`}>
+        <img
+          className={styles.artwork}
+          src={images.artwork}
+        />
+      </Link>
     </div>
   )
 }
