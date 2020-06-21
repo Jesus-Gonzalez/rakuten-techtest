@@ -10,6 +10,6 @@ export const useHomePage = configuration => {
   React.useEffect(() => {
     setDetail(null)
 
-    fetchFilms(application.initialLists)
+    fetchFilms('estrenos-para-toda-la-familia')
   })
 }

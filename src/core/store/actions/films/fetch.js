@@ -1,6 +1,6 @@
 import * as ActionTypes from '~/core/store/actionTypes'
 
-export const fetchFilms = films => ({
+export const fetchFilms = listId => ({
   type: ActionTypes.Films.Fetch,
-  films,
+  listId,
 })
