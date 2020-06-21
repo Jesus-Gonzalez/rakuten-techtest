@@ -5,5 +5,5 @@ export const fetchFilms = listId => (
   fetch(
     Configuration.Endpoints.Lists
       .replace(':id:', listId)
-  )
+  ).then(({ data: { data } }) => data)
 )

@@ -1,2 +1,2 @@
-export { default as HomePage } from './HomePage.smart'
-export { default } from './HomePage.smart'
+export { default as HomePage } from './HomePage.page'
+export { default } from './HomePage.page'

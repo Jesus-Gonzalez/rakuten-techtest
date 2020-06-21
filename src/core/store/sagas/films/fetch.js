@@ -1,4 +1,4 @@
-import { call, put, takeLatest } from 'redux-saga/effects'
+import { call, put, takeEvery } from 'redux-saga/effects'
 
 import * as ActionTypes from '~/core/store/actionTypes'
 import * as Api from '~/api'
@@ -13,5 +13,5 @@ function * fetchFilms ({ listId }) {
 }
 
 export default function * fetchFilmsSaga () {
-  yield takeLatest(ActionTypes.Films.Fetch, fetchFilms)
+  yield takeEvery(ActionTypes.Films.Fetch, fetchFilms)
 }

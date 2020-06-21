@@ -45,24 +45,12 @@ const CarouselComponent = props => {
         <div
           className={styles.scroll}
         >
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
+          {items.map(item => (
+            <CarouselItem
+              key={item.id}
+              item={item}
+            />
+          ))}
         </div>
         {arrow.right && (
           <div className={styles.right}>
