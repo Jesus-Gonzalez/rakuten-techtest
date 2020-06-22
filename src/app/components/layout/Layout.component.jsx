@@ -1,11 +1,13 @@
 import React from 'react'
 
+import styles from './Layout.styles'
+
 const LayoutComponent = props => {
   const { children, title } = props
 
   return (
     <>
-      <header>
+      <header className={styles.header}>
         <nav>
           {title}
         </nav>

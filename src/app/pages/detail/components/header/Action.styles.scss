@@ -3,6 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: 10px;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
 }
 
 .round {
@@ -27,4 +32,61 @@
 
 .icon {
   font-size: 25px;
+}
+
+@media (min-width: 470px) {
+  .action {
+    margin-left: 20px;
+
+    .round {
+      width: 80px;
+      height: 80px;
+    }
+
+    .icon {
+      font-size: 28px;
+    }
+
+    .title {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .action {
+    margin-left: 25px;
+
+    .round {
+      width: 90px;
+      height: 90px;
+    }
+
+    .icon {
+      font-size: 30px;
+    }
+
+    .title {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (min-width: 910px) {
+  .action {
+    margin-left: 75px;
+
+    .round {
+      width: 120px;
+      height: 120px;
+    }
+
+    .icon {
+      font-size: 32px;
+    }
+
+    .title {
+      font-size: 16px;
+    }
+  }
 }

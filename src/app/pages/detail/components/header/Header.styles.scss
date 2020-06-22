@@ -24,8 +24,7 @@
 .actions {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: center;
   position: absolute;
   top: 15%;
 }
@@ -130,3 +129,61 @@
   }
 }
 
+@media (min-width: 470px) {
+  .actions {
+    top: 15%;
+  }
+
+  .movieActionsWrapper {
+    width: 75%;
+  }
+}
+
+@media (min-width: 600px) {
+  .hero {
+    height: 570px;
+  }
+
+  .actions {
+    top: 17%;
+  }
+
+  .movieActionsWrapper {
+    width: 60%;
+  }
+}
+
+@media (min-width: 910px) {
+  .hero {
+    height: 620px;
+  }
+
+  .actions {
+    top: 20%;
+  }
+
+  .info {
+    bottom: 130px;
+
+    .title {
+      font-size: 42px;
+    }
+  }
+  .movieActionsWrapper {
+    width: 865px;
+  }
+
+  .movieActions {
+    flex-direction: row;
+    justify-content: center;
+
+    button {
+      margin-left: 10px;
+      width: 40%;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+}
