@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import styles from './Layout.styles'
 
@@ -9,7 +10,7 @@ const LayoutComponent = props => {
     <>
       <header className={styles.header}>
         <nav>
-          {title}
+          <Link to='/'>{title}</Link>
         </nav>
       </header>
       <main>

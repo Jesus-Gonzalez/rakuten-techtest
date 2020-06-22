@@ -1,4 +1,15 @@
 .header {
   position: relative;
   z-index: 2;
+
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media (min-width: 910px) {
+  .header {
+    font-size: 32px;
+  }
 }
