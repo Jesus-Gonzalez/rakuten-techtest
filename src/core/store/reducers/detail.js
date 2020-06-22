@@ -21,14 +21,10 @@ export default function (state = initialState, action) {
     case ActionTypes.Detail.FetchSuccess: {
       const { item } = action
 
-      debugger
-
-      return state
-
-      // return Object.assign({}, state, {
-      //   items: nextItems,
-      //   loading: false
-      // })
+      return Object.assign({}, state, {
+        item,
+        loading: false
+      })
     }
 
     // todo

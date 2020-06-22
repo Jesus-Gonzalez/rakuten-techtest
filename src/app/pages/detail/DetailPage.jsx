@@ -1,15 +1,24 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import { Header } from './components'
+import { LoadingPage } from '~/app/pages'
 
 import { useDetailPage } from './useDetailPage.hook'
 
-const DetailPage = () => {
-  const hook = useDetailPage()
+const DetailPage = props => {
+  const {
+    state
+  } = useDetailPage(props)
+
+  if (state.detail.item === null || state.detail.loading) {
+    return <LoadingPage />
+  }
 
   return (
     <div>
-      <h1>Detail Page</h1>
-      <Link to='/home'>Home</Link>
+      <Header
+        item={state.detail.item}
+      />
     </div>
   )
 }

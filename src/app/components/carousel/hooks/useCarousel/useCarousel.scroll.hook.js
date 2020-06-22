@@ -8,7 +8,7 @@ export default configuration => {
 
   const go = (direction) => {
     const inc = direction === 'left' ? -1 : 1
-    const nextPage = page + inc
+    const nextPage = page + (inc * 0.5)
     setPage(nextPage)
   }
 
