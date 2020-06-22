@@ -14,48 +14,46 @@ const Header = props => {
   } = useHeader(props)
 
   return (
-    <div className={styles.wrapper}>
-      <header
-        className={styles.hero}
-        style={headerStyle}
-      >
-        <div className={styles.header}>
-          <div className={styles.actions}>
-            <Action />
-            <Action />
-          </div>
+    <header
+      className={styles.hero}
+      style={headerStyle}
+    >
+      <div className={styles.header}>
+        <div className={styles.actions}>
+          <Action />
+          <Action />
+        </div>
 
-          <div className={styles.info}>
-            <div className={styles.score}>
-              <span className={styles.star}>
-                +
-              </span>
-              <span className={styles.number}>
-                7.7
-              </span>
-            </div>
-            <div className={styles.title}>
-              <h3>{item.title}</h3>
-            </div>
+        <div className={styles.info}>
+          <div className={styles.score}>
+            <span className={styles.star}>
+              +
+            </span>
+            <span className={styles.number}>
+              7.7
+            </span>
           </div>
-
-          <div className={styles.movieActionsWrapper}>
-            <div className={styles.movieActions}>
-              <button
-                className={styles.watch}
-              >
-                Ver ahora
-              </button>
-              <button
-                className={styles.coupon}
-              >
-                Canjear cupon
-              </button>
-            </div>
+          <div className={styles.title}>
+            <h3>{item.title}</h3>
           </div>
         </div>
-      </header>
-    </div>
+
+        <div className={styles.movieActionsWrapper}>
+          <div className={styles.movieActions}>
+            <button
+              className={styles.watch}
+            >
+              Ver ahora
+            </button>
+            <button
+              className={styles.coupon}
+            >
+              Canjear cupon
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
   )
 }
 

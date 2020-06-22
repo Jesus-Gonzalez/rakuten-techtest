@@ -1,3 +1,3 @@
 // export * from './content'
 export * from './header'
-// export * from './social'
+export * from './social'

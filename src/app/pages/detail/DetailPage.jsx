@@ -3,7 +3,13 @@ import React from 'react'
 import { withLayout } from '~/app/components'
 import { LoadingPage } from '~/app/pages'
 
-import { Header } from './components'
+import {
+  Header,
+  Social,
+} from './components'
+
+import styles from './DetailPage.styles'
+
 import { useDetailPage } from './useDetailPage.hook'
 
 const DetailPage = props => {
@@ -16,10 +22,12 @@ const DetailPage = props => {
   }
 
   return (
-    <div>
+    <div className={styles.page}>
       <Header
         item={state.detail.item}
       />
+
+      <Social />
     </div>
   )
 }

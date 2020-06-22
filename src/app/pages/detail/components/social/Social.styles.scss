@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding: 25px 0;
+}
+
+.item {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  color: #252525;
+
+  &:not(:first-of-type) {
+    margin-left: 10px;
+  }
+}
