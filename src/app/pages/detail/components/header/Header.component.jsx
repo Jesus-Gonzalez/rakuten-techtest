@@ -1,4 +1,5 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { Action } from './__components'
 
@@ -20,15 +21,23 @@ const Header = props => {
     >
       <div className={styles.header}>
         <div className={styles.actions}>
-          <Action />
-          <Action />
+          <Action
+            icon='play-circle'
+            title='Trailer'
+          />
+
+          <Action
+            icon='thumbtack'
+            title='Wishlist'
+          />
         </div>
 
         <div className={styles.info}>
           <div className={styles.score}>
-            <span className={styles.star}>
-              +
-            </span>
+            <FontAwesomeIcon
+              className={styles.star}
+              icon='star'
+            />
             <span className={styles.number}>
               7.7
             </span>
@@ -43,7 +52,11 @@ const Header = props => {
             <button
               className={styles.watch}
             >
-              Ver ahora
+              <div className={styles.actionText}>Ver ahora</div>
+              <div className={styles.actionDetail}>
+                <span className={styles.price}>desde 1,99 €</span>
+                <span className={styles.point}>o 199 <span className={styles.iconPoints}>P</span></span>
+              </div>
             </button>
             <button
               className={styles.coupon}
