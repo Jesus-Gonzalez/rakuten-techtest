@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { Header } from './components'
+import { withLayout } from '~/app/components'
 import { LoadingPage } from '~/app/pages'
 
+import { Header } from './components'
 import { useDetailPage } from './useDetailPage.hook'
 
 const DetailPage = props => {
@@ -23,4 +24,4 @@ const DetailPage = props => {
   )
 }
 
-export default DetailPage
+export default withLayout(DetailPage)

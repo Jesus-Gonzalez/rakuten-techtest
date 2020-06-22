@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
 
 import { useLayout } from './useLayout.hook'
 
@@ -26,17 +25,10 @@ const Layout = props => {
 
 Layout.propTypes = propTypes
 
-const mapStateToProps = state => ({
-  application: state.application,
-  detail: state.detail,
-})
-
-const ConnectedLayout = connect(mapStateToProps)(Layout)
-
 export const withLayout = Component => (props) => (
-  <ConnectedLayout>
+  <Layout>
     <Component {...props} />
-  </ConnectedLayout>
+  </Layout>
 )
 
-export default ConnectedLayout
+export default Layout
