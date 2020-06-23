@@ -11,11 +11,13 @@ Rakuten.TV technical test
 
 ## About the project
 
-This project has been built from scratch only using the education and knowledge of the author.
+### Facts
 
-I have not based the project template in any other author's configuration or any available in a website.
+- This project has been built from scratch only using the education and knowledge of the author.
 
-I have tried to maintain a similar aspect as in rakuten.tv but I have skipped/ignored some details.
+- I have not based the project template in any other author's configuration or any available in a website.
+
+- I have tried to maintain a similar aspect as in rakuten.tv but I have skipped/ignored some details.
 
 ### Technologies
 
@@ -35,6 +37,8 @@ I have tried to maintain a similar aspect as in rakuten.tv but I have skipped/ig
 ### Architecture
 
 I have developed the project following a personal architecture present in most of my projects.
+
+As style guide I've chosen `standardjs` because it's way cleaner and easier to understand than other style guides.
 
 - every directory has its own `index(.js)` responsible to export the members
 - every other member is able to import the directory or super-directory to reference the public members exported in the module's `index`

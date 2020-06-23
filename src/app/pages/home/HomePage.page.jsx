@@ -1,6 +1,8 @@
 import React from 'react'
 
-import { withLayout, Carousel } from '~/app/components'
+import { withLayout } from '~/app/components'
+
+import { Carousel } from './components'
 
 import { useHomePage } from './useHomePage.hook'
 
