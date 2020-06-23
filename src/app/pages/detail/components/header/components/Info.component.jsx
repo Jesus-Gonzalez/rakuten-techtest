@@ -10,8 +10,6 @@ const propTypes = {
 const Info = props => {
   const { item } = props
 
-  console.log('Info.item', item)
-
   return (
     <div className={styles.info}>
       <div className={styles.score}>
