@@ -1,0 +1,42 @@
+.info {
+  position: absolute;
+  bottom: 185px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,.8);
+
+  .score {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffe300;
+    font-weight: bold;
+    font-size: 20px;
+
+    .star {
+      margin-bottom: 2px;
+      margin-right: 5px;
+      font-size: 16px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.8);
+    }
+  }
+
+  .title {
+    font-size: 28px;
+
+    h3 {
+      margin: 10px 0;
+    }
+  }
+}
+
+@media (min-width: 910px) {
+  .info {
+    bottom: 130px;
+
+    .title {
+      font-size: 42px;
+    }
+  }
+}

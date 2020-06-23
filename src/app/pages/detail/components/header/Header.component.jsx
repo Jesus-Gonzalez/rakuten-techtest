@@ -1,12 +1,15 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import PropTypes from 'prop-types'
 
-import { Action } from './__components'
+import { Action, Info, MovieActions } from './components'
 
 import { useHeader } from './useHeader.hook'
 
 import styles from './Header.styles'
 
+const propTypes = {
+  item: PropTypes.object.isRequired,
+}
 const Header = props => {
   const { item } = props
 
@@ -34,42 +37,15 @@ const Header = props => {
           />
         </div>
 
-        <div className={styles.info}>
-          <div className={styles.score}>
-            <FontAwesomeIcon
-              className={styles.star}
-              icon='star'
-            />
-            <span className={styles.number}>
-              7.7
-            </span>
-          </div>
-          <div className={styles.title}>
-            <h3>{item.title}</h3>
-          </div>
-        </div>
+        <Info
+          item={item}
+        />
 
-        <div className={styles.movieActionsWrapper}>
-          <div className={styles.movieActions}>
-            <button
-              className={styles.watch}
-            >
-              <div className={styles.actionText}>Ver ahora</div>
-              <div className={styles.actionDetail}>
-                <span className={styles.price}>desde 1,99 €</span>
-                <span className={styles.point}>o 199 <span className={styles.iconPoints}>P</span></span>
-              </div>
-            </button>
-            <button
-              className={styles.coupon}
-            >
-              Canjear cupon
-            </button>
-          </div>
-        </div>
+        <MovieActions />
       </div>
     </header>
   )
 }
+Header.propTypes = propTypes
 
 export default Header

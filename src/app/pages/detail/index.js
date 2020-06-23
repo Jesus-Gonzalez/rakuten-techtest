@@ -1,2 +1,2 @@
-export { default as DetailPage } from './DetailPage'
-export { default } from './DetailPage'
+export { default as DetailPage } from './DetailPage.page'
+export { default } from './DetailPage.page'
