@@ -11,7 +11,8 @@ const Header = props => {
   const { item } = props
 
   const {
-    headerStyle
+    headerStyle,
+    gotoTrailer,
   } = useHeader(props)
 
   return (
@@ -24,6 +25,7 @@ const Header = props => {
           <Action
             icon='play-circle'
             title='Trailer'
+            onClick={gotoTrailer}
           />
 
           <Action

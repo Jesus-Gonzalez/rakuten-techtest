@@ -9,6 +9,7 @@ import { LoadingPage } from '~/app/pages'
 
 const DetailPage = React.lazy(() => import('~/app/pages/detail'))
 const HomePage = React.lazy(() => import('~/app/pages/home'))
+const TrailerPage = React.lazy(() => import('~/app/pages/trailer'))
 
 const Routing = () => (
   <Router>
@@ -29,6 +30,11 @@ const Routing = () => (
         <Route
           path='/detail/:filmId'
           component={DetailPage}
+        />
+
+        <Route
+          path='/trailer/:filmId'
+          component={TrailerPage}
         />
       </Switch>
     </React.Suspense>

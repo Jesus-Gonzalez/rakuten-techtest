@@ -13,18 +13,18 @@ import {
   faPlayCircle,
   faEye,
   faThumbtack,
-  faStar
+  faStar,
+  faArrowLeft,
 } from '@fortawesome/free-solid-svg-icons'
 
 config.autoAddCss = false
-
-console.log('faTwitter', faTwitter)
 
 library.add(
   faPlayCircle,
   faEye,
   faThumbtack,
   faStar,
+  faArrowLeft,
   faFacebook,
   faPinterest,
   faTwitter,

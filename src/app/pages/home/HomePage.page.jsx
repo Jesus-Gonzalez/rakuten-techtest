@@ -11,8 +11,6 @@ const HomePage = props => {
 
   return (
     <div>
-      <h1>Home Page</h1>
-      <h2>List</h2>
       {state.films.items
         .filter(list => !list.loading)
         .map(list => (
