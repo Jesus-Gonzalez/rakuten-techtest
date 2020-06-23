@@ -1,24 +1,3 @@
 .titleContent {
   margin-left: 5px;
 }
-
-.table {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  .title {
-    font-weight: bold;
-  }
-
-  .languages, .subtitles {
-    width: 50%;
-    padding: 15px;
-  }
-}
-
-@media (min-width: 470px) {
-  .table {
-    flex-direction: row;
-  }
-}

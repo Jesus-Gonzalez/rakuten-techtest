@@ -21,6 +21,7 @@ import {
   faClock,
   faInfoCircle,
   faCommentDots,
+  faFilm,
 } from '@fortawesome/free-solid-svg-icons'
 
 config.autoAddCss = false
@@ -37,6 +38,7 @@ library.add(
   faClock,
   faInfoCircle,
   faCommentDots,
+  faFilm,
   faFacebook,
   faPinterest,
   faTwitter,
