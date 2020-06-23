@@ -6,6 +6,7 @@ import { useRouteMatch, useHistory } from 'react-router-dom'
 import { resetTrailer, fetchTrailer } from '~/core/store/actions'
 
 export const useTrailerPage = () => {
+  const history = useHistory()
   const state = useSelector(state => ({
     trailer: state.trailer,
   }))
@@ -16,7 +17,6 @@ export const useTrailerPage = () => {
     fetchTrailer: compose(dispatch, fetchTrailer),
   }), [dispatch])
 
-  const history = useHistory()
   const goBack = () => {
     history.goBack()
   }
@@ -27,6 +27,12 @@ export const useTrailerPage = () => {
 
     actions.fetchTrailer(match.params.filmId)
   }, [match.params.filmId])
+
+  React.useEffect(() => {
+    if (state.trailer.error) {
+      history.push('/error')
+    }
+  })
 
   return {
     state,

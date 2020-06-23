@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { compose } from 'redux'
+import { useHistory } from 'react-router-dom'
 
 import {
   fetchFilms,
@@ -9,16 +10,12 @@ import {
 } from '~/core/store/actions'
 
 export const useHomePage = () => {
-  const dispatch = useDispatch()
+  const history = useHistory()
+
   const state = {
     application: useSelector(state => state.application),
     films: useSelector(state => state.films),
   }
-  const actions = React.useMemo(() => ({
-    resetDetail: compose(dispatch, resetDetail),
-    fetchFilms: compose(dispatch, fetchFilms),
-    resetFilms: compose(dispatch, resetFilms),
-  }), [dispatch])
 
   React.useEffect(() => {
     actions.resetDetail()
@@ -27,6 +24,19 @@ export const useHomePage = () => {
     state.application.initialLists
       .forEach(actions.fetchFilms)
   }, [state.application.initialLists])
+
+  React.useEffect(() => {
+    if (state.films.error) {
+      history.push('/error')
+    }
+  })
+
+  const dispatch = useDispatch()
+  const actions = React.useMemo(() => ({
+    resetDetail: compose(dispatch, resetDetail),
+    fetchFilms: compose(dispatch, fetchFilms),
+    resetFilms: compose(dispatch, resetFilms),
+  }), [dispatch])
 
   return {
     state,

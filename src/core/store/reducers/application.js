@@ -6,7 +6,7 @@ const initialState = {
     'estrenos-imprescindibles-en-taquilla',
     'estrenos-espanoles',
     'si-te-perdiste',
-    'especial-x-men',
+    // 'especial-x-men', // uncomment to provoke failure on home page
     'nuestras-preferidas-de-la-semana',
   ]
 }

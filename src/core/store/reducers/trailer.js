@@ -27,9 +27,10 @@ export default function (state = initialState, action) {
       })
     }
 
-    // todo
     case ActionTypes.Trailer.FetchError: {
-      return state
+      return Object.assign({}, state, {
+        error: 'fetch',
+      })
     }
 
     default: return state

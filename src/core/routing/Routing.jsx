@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 
 import { LoadingPage } from '~/app/pages/loading'
+import { ErrorPage } from '~/app/pages/error'
 
 const DetailPage = React.lazy(() => import(/* webpackChunkName: "detail" */ '~/app/pages/detail'))
 const HomePage = React.lazy(() => import(/* webpackChunkName: "home" */ '~/app/pages/home'))
@@ -35,6 +36,11 @@ const Routing = () => (
         <Route
           path='/trailer/:filmId'
           component={TrailerPage}
+        />
+
+        <Route
+          path='/error'
+          component={ErrorPage}
         />
       </Switch>
     </React.Suspense>
