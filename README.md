@@ -29,7 +29,7 @@ I have tried to maintain a similar aspect as in rakuten.tv but I have skipped/ig
 - axios
 - font-awesome
 - webpack
-- eslint
+- eslint (standardjs config)
 - editorconfig
 
 ### Architecture
