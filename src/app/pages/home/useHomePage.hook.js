@@ -14,11 +14,11 @@ export const useHomePage = () => {
     application: useSelector(state => state.application),
     films: useSelector(state => state.films),
   }
-  const actions = {
+  const actions = React.useMemo(() => ({
     resetDetail: compose(dispatch, resetDetail),
     fetchFilms: compose(dispatch, fetchFilms),
     resetFilms: compose(dispatch, resetFilms),
-  }
+  }), [dispatch])
 
   React.useEffect(() => {
     actions.resetDetail()

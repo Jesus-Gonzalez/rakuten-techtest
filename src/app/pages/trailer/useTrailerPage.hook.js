@@ -10,12 +10,11 @@ export const useTrailerPage = () => {
     trailer: state.trailer,
   }))
 
-  // todo: useMemo on actions={dispatch}
   const dispatch = useDispatch()
-  const actions = {
+  const actions = React.useMemo(() => ({
     resetTrailer: compose(dispatch, resetTrailer),
     fetchTrailer: compose(dispatch, fetchTrailer),
-  }
+  }), [dispatch])
 
   const history = useHistory()
   const goBack = () => {

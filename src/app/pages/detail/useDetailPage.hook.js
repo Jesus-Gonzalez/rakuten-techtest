@@ -11,10 +11,10 @@ export const useDetailPage = () => {
   const state = {
     detail: useSelector(state => state.detail),
   }
-  const actions = {
+  const actions = React.useMemo(() => ({
     fetchDetail: compose(dispatch, fetchDetail),
     resetDetail: compose(dispatch, resetDetail),
-  }
+  }), [dispatch])
 
   React.useEffect(() => {
     actions.resetDetail()
