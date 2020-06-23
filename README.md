@@ -15,6 +15,8 @@ This project has been built from scratch only using the education and knowledge 
 
 I have not based the project template in any other author's configuration or any available in a website.
 
+I have tried to maintain a similar aspect as in rakuten.tv but I have skipped/ignored some details.
+
 ### Technologies
 
 - javascript (esnext)
