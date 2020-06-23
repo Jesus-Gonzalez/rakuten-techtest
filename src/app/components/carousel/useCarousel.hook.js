@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default configuration => {
+export const useCarousel = configuration => {
   const [left, setLeft] = React.useState(false)
   const [right, setRight] = React.useState(false)
   const [page, setPage] = React.useState(0)

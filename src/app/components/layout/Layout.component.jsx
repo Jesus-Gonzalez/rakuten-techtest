@@ -1,7 +1,16 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 import styles from './Layout.styles'
+
+const propTypes = {
+  children: PropTypes.oneOf([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node)
+  ]).isRequired,
+  title: PropTypes.string
+}
 
 const LayoutComponent = props => {
   const { children, title } = props
@@ -19,5 +28,7 @@ const LayoutComponent = props => {
     </>
   )
 }
+
+LayoutComponent.propTypes = propTypes
 
 export default LayoutComponent

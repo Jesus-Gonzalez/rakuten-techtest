@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './Arrow.styles'
 
-export default configuration => {
+export const useArrow = configuration => {
   const {
     left,
     right,

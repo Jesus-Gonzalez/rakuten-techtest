@@ -14,6 +14,10 @@ const propTypes = {
       left: PropTypes.bool.isRequired,
       right: PropTypes.bool.isRequired,
     }).isRequired,
+    ref: PropTypes.shape({
+      wrapper: PropTypes.object.isRequired
+    }).isRequired,
+    go: PropTypes.func.isRequired,
   }).isRequired,
   items: PropTypes.arrayOf(PropTypes.object),
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 
-import styles from './Arrow.styles'
+import { useArrow } from './useArrow.hook'
 
 const ArrowComponent = props => {
   const {
     className,
     onClick,
-  } = props
+  } = useArrow(props)
 
   return (
     <div
