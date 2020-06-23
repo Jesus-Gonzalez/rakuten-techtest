@@ -1,1 +1,1 @@
-export { default as Carousel } from './Carousel.smart'
+export { default as Carousel } from './Carousel.component'

@@ -11,6 +11,8 @@ const HomePage = props => {
     state,
   } = useHomePage(props)
 
+  console.log('state', state)
+
   return (
     <div>
       {state.films.items
