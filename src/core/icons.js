@@ -15,6 +15,12 @@ import {
   faThumbtack,
   faStar,
   faArrowLeft,
+  faFlag,
+  faUsers,
+  faCalendar,
+  faClock,
+  faInfoCircle,
+  faCommentDots,
 } from '@fortawesome/free-solid-svg-icons'
 
 config.autoAddCss = false
@@ -25,6 +31,12 @@ library.add(
   faThumbtack,
   faStar,
   faArrowLeft,
+  faFlag,
+  faUsers,
+  faCalendar,
+  faClock,
+  faInfoCircle,
+  faCommentDots,
   faFacebook,
   faPinterest,
   faTwitter,

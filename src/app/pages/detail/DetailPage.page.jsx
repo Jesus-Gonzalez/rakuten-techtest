@@ -6,6 +6,7 @@ import { LoadingPage } from '~/app/pages/loading'
 import {
   Header,
   Social,
+  Content,
 } from './components'
 
 import styles from './DetailPage.styles'
@@ -28,6 +29,10 @@ const DetailPage = props => {
       />
 
       <Social />
+
+      <Content
+        item={state.detail.item}
+      />
     </div>
   )
 }

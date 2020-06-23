@@ -1,0 +1,13 @@
+.meta {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+
+  .metaContent {
+    margin-left: 5px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
