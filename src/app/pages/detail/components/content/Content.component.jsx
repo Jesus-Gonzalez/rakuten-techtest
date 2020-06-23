@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Header, Languages } from './components'
+import { Actors, Header, Languages } from './components'
 
 import styles from './Content.styles'
 
@@ -18,6 +18,7 @@ const Content = props => {
         {item.plot}
       </p>
       <Languages item={item} />
+      <Actors item={item} />
     </div>
   )
 }

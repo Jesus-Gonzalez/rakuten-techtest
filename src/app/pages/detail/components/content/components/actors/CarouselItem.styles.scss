@@ -1,0 +1,35 @@
+.item {
+  margin: 0 3px;
+  border: 3px solid transparent;
+
+  &:hover {
+    border: 3px solid #ffe300;
+  }
+}
+
+.item, .artwork {
+  width: 135px;
+  height: 200px;
+}
+
+
+@media (min-width: 470px) {
+  .item, .artwork {
+    width: 175px;
+    height: 240px;
+  }
+}
+
+@media (min-width: 600px) {
+  .item, .artwork {
+    width: 185px;
+    height: 280px;
+  }
+}
+
+@media (min-width: 910px) {
+  .item, .artwork {
+    width: 217px;
+    height: 303px;
+  }
+}
