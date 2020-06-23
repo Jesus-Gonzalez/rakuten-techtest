@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { LoadingPage } from '~/app/pages'
+import { LoadingPage } from '~/app/pages/loading'
 import { useTrailerPage } from './useTrailerPage.hook'
 
 import { Layout } from './components'

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { withLayout } from '~/app/components'
-import { LoadingPage } from '~/app/pages'
+import { LoadingPage } from '~/app/pages/loading'
 
 import {
   Header,

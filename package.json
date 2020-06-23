@@ -4,6 +4,7 @@
   "description": "rakuten technical test",
   "scripts": {
     "start:dev": "webpack-dev-server --config webpack/webpack.dev.js",
+    "build": "webpack-cli --config webpack/webpack.prod.js",
     "lint": "eslint"
   },
   "repository": {
