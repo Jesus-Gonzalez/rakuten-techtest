@@ -8,6 +8,26 @@
 }
 
 .item, .artwork {
-  width: 217px;
-  height: 303px;
+  width: auto;
+  height: 200px;
+}
+
+
+@media (min-width: 470px) {
+  .item, .artwork {
+    height: 240px;
+  }
+}
+
+@media (min-width: 600px) {
+  .item, .artwork {
+    height: 280px;
+  }
+}
+
+@media (min-width: 910px) {
+  .item, .artwork {
+    width: 217px;
+    height: 303px;
+  }
 }
